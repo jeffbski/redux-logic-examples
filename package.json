@@ -1,0 +1,33 @@
+{
+  "name": "redux-logic-examples",
+  "version": "3.0.1",
+  "description": "Examples for redux-logic",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "react-native": "src/index.js",
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  },
+  "scripts": {
+    "test:examples": "cross-env BABEL_ENV=commonjs node examples/testAll.js",
+    "check:examples": "npm run build:examples && npm run test:examples",
+    "build:examples": "cross-env BABEL_ENV=commonjs node examples/buildAll.js",
+    "fullbuild:examples": "cross-env BABEL_ENV=commonjs node examples/fullBuildAll.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffbski/redux-logic-examples.git"
+  },
+  "author": "Jeff Barczewski <jeff.barczewski@gmail.com> (https://github.com/jeffbski)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffbski/redux-logic-examples/issues"
+  },
+  "homepage": "https://github.com/jeffbski/redux-logic-examples",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
